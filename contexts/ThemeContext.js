@@ -4,7 +4,10 @@ const ThemeContext = createContext();
 const UpdateContext = createContext();
 
 export function useTheme() {
-  return [useContext(ThemeContext), useContext(UpdateContext)];
+  return useContext(ThemeContext);
+}
+export function useThemeUpdate() {
+  return useContext(UpdateContext);
 }
 
 export default function ThemeProvider({ children }) {

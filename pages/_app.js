@@ -4,6 +4,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const { title } = Component().props;
+  console.log(pageProps);
   return (
     <ThemeProvider>
       <Layout title={title}>
